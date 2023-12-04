@@ -1,0 +1,12 @@
+#ifndef MYKEYBOARD_GLOBAL_H
+#define MYKEYBOARD_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MYKEYBOARD_LIBRARY)
+#  define MYKEYBOARD_EXPORT Q_DECL_EXPORT
+#else
+#  define MYKEYBOARD_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MYKEYBOARD_GLOBAL_H
